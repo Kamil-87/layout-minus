@@ -426,28 +426,18 @@ body {
 }
 
 .header__search {
-  width: 298px;
   border-bottom: 1px solid #45474e;
 }
 .header__search-input {
-  background: transparent;
   border: none;
   outline: none;
   caret-color: #ffffff;
   color: #ffffff;
-  position: relative;
-  margin-right: 7px;
-  padding-right: 20px;
-  display: block;
-}
-.header__search-input::after {
-  content: "";
-  background-image: url("../images/twitter.png");
-  position: absolute;
-  display: block;
-  width: 33px;
-  height: 33px;
-  right: -10px;
+  background: url("../images/search.png") no-repeat right;
+  width: 298px;
+  padding-right: 50px;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 .btn {
@@ -547,11 +537,38 @@ body {
   align-items: center;
 }
 
-.btn-slider {
-  background-color: #97c13c;
+.slider-btn {
+  background: #97c13c;
+  height: 120px;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
+  position: relative;
+  padding-left: 125px;
+  padding-right: 50px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Proxima Nova", serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
-.btn-slider::before {
+.slider-btn::before {
+  content: "";
   background-image: url("../images/note.svg");
+  position: absolute;
+  width: 64px;
+  height: 60px;
+  top: 28px;
+  left: 34px;
+}
+.slider-btn:hover {
+  background: #7fa232;
+  transition: all 0.3s ease;
+}
+.slider-btn:active {
+  background: #69872a;
+  box-shadow: none;
 }
 
 .slider__pager {
@@ -601,18 +618,71 @@ body {
 }
 
 .call-action__btn {
-  background-color: #97c13c;
+  background: #97c13c;
+  height: 120px;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
+  position: relative;
+  padding-left: 125px;
+  padding-right: 50px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Proxima Nova", serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 .call-action__btn::before {
+  content: "";
   background-image: url("../images/note.svg");
+  position: absolute;
+  width: 64px;
+  height: 60px;
+  top: 28px;
+  left: 34px;
+}
+.call-action__btn:hover {
+  background: #7fa232;
+  transition: all 0.3s ease;
+}
+.call-action__btn:active {
+  background: #69872a;
+  box-shadow: none;
 }
 
 .project-inquiry__btn {
-  background-color: #ffffff;
+  background: #ffffff;
+  height: 120px;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
+  position: relative;
+  padding-left: 125px;
+  padding-right: 50px;
   color: #f95353;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Proxima Nova", serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 .project-inquiry__btn::before {
+  content: "";
   background-image: url("../images/banknote.svg");
+  position: absolute;
+  width: 64px;
+  height: 60px;
+  top: 28px;
+  left: 34px;
+}
+.project-inquiry__btn:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.project-inquiry__btn:active {
+  background: #d9d9d9;
+  box-shadow: none;
 }
 
 .footer-top {
@@ -665,7 +735,7 @@ body {
 }
 .form__text, .form__name, .form__email {
   background-color: rgba(255, 255, 255, 0.1);
-  padding-left: 40px;
+  padding: 0 20px 0 40px;
   border: none;
   outline: none;
   caret-color: #ffffff;
@@ -696,6 +766,39 @@ body {
 .form__box {
   display: flex;
   justify-content: space-between;
+}
+.form__btn {
+  background: #ffffff;
+  height: 120px;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
+  position: relative;
+  padding-left: 125px;
+  padding-right: 50px;
+  color: #f49244;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Proxima Nova", serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.form__btn::before {
+  content: "";
+  background-image: url("../images/paperplane.svg");
+  position: absolute;
+  width: 64px;
+  height: 60px;
+  top: 28px;
+  left: 34px;
+}
+.form__btn:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.form__btn:active {
+  background: #d9d9d9;
+  box-shadow: none;
 }
 
 .footer__bottom {
@@ -741,14 +844,6 @@ body {
   height: 100px;
   line-height: 100px;
   padding: 0 34px;
-}
-
-.btn-form {
-  background-color: #ffffff;
-  color: #f49244;
-}
-.btn-form::before {
-  background-image: url("../images/paperplane.svg");
 }
 
 .footer__date {

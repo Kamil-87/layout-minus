@@ -49,13 +49,13 @@
 
       <div class="header__right">
         <div class="header__search">
-          <input type="text" class="header__search-input" />
+          <input type="text" class="header__search-input" id="search" />
+          <label for="search"></label>
         </div>
       </div>
     </div>
   </div>
 </header>
-
 
 <div class="banner-section">
   <div class="slider__image">
@@ -82,7 +82,7 @@
           port of Yokohama.At dawn on the 13th the Carnatic
         </p>
       </div>
-      <button class="btn btn-slider">
+      <button class="btn slider-btn">
         READ More about Miinus
       </button>
 
@@ -101,7 +101,7 @@
         islands put in. It is situated in the bay of Yeddo, and at but a
       </p>
 
-      <button class="btn call-action__btn"> READ More about Miinus</button>
+      <button class="call-action__btn"> READ More about Miinus</button>
     </div>
   </div>
 </section>
@@ -166,16 +166,15 @@
               </li>
             </ul>
           </li>
-
         </ul>
 
-        <form class="footer-top__form form">
+        <form class="footer-top__form form" action="#" method="post">
           <textarea class="form__text" placeholder="your message"></textarea>
           <div class="form__box">
-            <input type="text" class="form__name" placeholder="Your name"/>
-            <input type="email" class="form__email" placeholder="e-mail address"/>
+            <input type="text" class="form__name" placeholder="Your name" name="name"/>
+            <input type="email" class="form__email" placeholder="e-mail address" name="email" />
           </div>
-          <button class="btn btn-form" type="submit">
+          <button class="form__btn" type="submit">
             send message
           </button>
         </form>

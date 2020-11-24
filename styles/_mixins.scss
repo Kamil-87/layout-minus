@@ -1,15 +1,18 @@
-@mixin button-bg-icon($bg, $icon, $color) {
+@mixin button-bg-icon($bg, $color, $icon) {
   background: $bg;
-  width: 516px;
   height: 120px;
   box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
   position: relative;
   padding-left: 125px;
+  padding-right: 50px;
   color: $color;
   border: none;
   outline: none;
   text-transform: uppercase;
   font-family: "Proxima Nova", serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
   
   &::before {
     content: "";
@@ -25,7 +28,8 @@
     transition: all 0.3s ease;
   }
   &:active {
-    background:darken($bg,25%);
+    background:darken($bg,15%);
+    box-shadow: none;
   }
 }
 

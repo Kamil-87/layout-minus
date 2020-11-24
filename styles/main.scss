@@ -91,31 +91,25 @@ body {
 }
 
 .header__search {
-  width: 298px;
   border-bottom: 1px solid #45474e;
   
+  label {
+  
+  }
+  
   &-input {
-    background: transparent;
+    //background: transparent;
     border: none;
     outline: none;
     caret-color: #ffffff;
     color: #ffffff;
-    position: relative;
-    margin-right: 7px;
-    padding-right: 20px;
-    display: block;
-    
-    &::after {
-      content: "";
-      background-image: url("../images/twitter.png");
-      position: absolute;
-      display: block;
-      width: 33px;
-      height: 33px;
-      right: -10px;
-    }
-    
+    background: url("../images/search.png") no-repeat right;
+    width: 298px;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-bottom: 15px;
   }
+  
 }
 
 .btn {
@@ -224,11 +218,8 @@ body {
   align-items: center;
 }
 
-.btn-slider {
-  background-color: #97c13c;
-  &::before {
-    background-image: url("../images/note.svg");
-  }
+.slider-btn {
+  @include button-bg-icon(#97c13c, #ffffff, "../images/note.svg");
 }
 
 .slider__pager {
@@ -287,18 +278,10 @@ body {
 }
 
 .call-action__btn {
-  background-color: #97c13c;
-  
-  &::before {
-    background-image: url("../images/note.svg");
-  }
+  @include button-bg-icon(#97c13c, #ffffff, "../images/note.svg");
 }
 .project-inquiry__btn {
-  background-color: #ffffff;
-  color: rgba(249, 83, 83, 1);
-  &::before {
-    background-image: url("../images/banknote.svg");
-  }
+  @include button-bg-icon(#ffffff, #f95353, "../images/banknote.svg");
 }
 
 
@@ -373,7 +356,7 @@ body {
   
   &__text, &__name, &__email {
     background-color: rgba(255, 255, 255, .1);
-    padding-left: 40px;
+    padding: 0 20px 0 40px;
     border: none;
     outline: none;
     caret-color: #ffffff;
@@ -411,9 +394,11 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  
+  &__btn {
+    @include button-bg-icon(#ffffff, #f49244, "../images/paperplane.svg");
+  }
 }
-
-
 
 
 .footer__bottom {
@@ -469,13 +454,7 @@ body {
   
 }
 
-.btn-form {
-  background-color: #ffffff;
-  color: rgba(244, 146, 68, 1);
-  &::before {
-    background-image: url("../images/paperplane.svg");
-  }
-}
+
 
 .footer__date {
   font-size: 36px;
