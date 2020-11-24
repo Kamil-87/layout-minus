@@ -436,7 +436,43 @@ body {
   right: -10px;
 }
 
+.btn {
+  padding-right: 50px;
+  height: 120px;
+  background-color: #97c13c;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
+  position: relative;
+  padding-left: 125px;
+  border: none;
+  font-weight: 500;
+  outline: none;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Proxima Nova", serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn :hover {
+  background-color: rgba(151, 193, 60, 0.9);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 60px;
+  top: 28px;
+  left: 34px;
+}
+
 /*------------------------------*/
+.btn-next, .btn-prev {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 .slider__image {
   width: 2456px;
   height: 1068px;
@@ -488,6 +524,9 @@ body {
   justify-content: center;
   height: 100%;
 }
+.slider__pager-box img {
+  display: block;
+}
 
 .slider__btn {
   display: flex;
@@ -495,15 +534,10 @@ body {
 }
 
 .btn-slider {
-  background-color: transparent;
-  padding: 20px;
-  cursor: pointer;
+  background-color: #97c13c;
 }
-.btn-slider img {
-  display: block;
-  z-index: 5;
-  width: 100%;
-  background-color: #ffffff;
+.btn-slider::before {
+  background-image: url("../images/note.svg");
 }
 
 .slider__pager {
@@ -522,29 +556,6 @@ body {
   line-height: 36px;
   font-size: 28px;
   padding: 80px 60px 53px;
-}
-
-.btn {
-  width: 516px;
-  height: 120px;
-  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
-  background-color: #97c13c;
-  position: relative;
-  padding-left: 125px;
-  color: #ffffff;
-  border: none;
-  text-align: left;
-  text-transform: uppercase;
-  font-family: "Proxima Nova - Semibold", serif;
-}
-.btn::before {
-  content: "";
-  background-image: url("../images/note.svg");
-  position: absolute;
-  width: 64px;
-  height: 60px;
-  top: 28px;
-  left: 34px;
 }
 
 .section__wrap {
@@ -573,6 +584,21 @@ body {
 
 .project-inquiry {
   background-color: #f95353;
+}
+
+.call-action__btn {
+  background-color: #97c13c;
+}
+.call-action__btn::before {
+  background-image: url("../images/note.svg");
+}
+
+.project-inquiry__btn {
+  background-color: #ffffff;
+  color: #f95353;
+}
+.project-inquiry__btn::before {
+  background-image: url("../images/banknote.svg");
 }
 
 .footer-top {
@@ -701,6 +727,14 @@ body {
   height: 100px;
   line-height: 100px;
   padding: 0 34px;
+}
+
+.btn-form {
+  background-color: #ffffff;
+  color: #f49244;
+}
+.btn-form::before {
+  background-image: url("../images/paperplane.svg");
 }
 
 .footer__date {
