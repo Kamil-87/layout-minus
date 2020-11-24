@@ -337,6 +337,20 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/proxima_nova_bold.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/proxima_nova_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold.woff2") format("woff2"), url("../fonts/proxima_nova_bold.woff") format("woff"), url("../fonts/proxima_nova_bold.ttf") format("truetype"), url("../fonts/proxima_nova_bold.svg#proxima_nova_bold") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#proxima_nova_bold") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
 html {
   box-sizing: border-box;
 }
