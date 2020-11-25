@@ -626,7 +626,7 @@ body {
   padding: 50px 50px 50px 125px;
   color: #ffffff;
   max-width: 516px;
-  font-size: 0.93em;
+  font-size: 24px;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -637,7 +637,7 @@ body {
 }
 @media (max-width: 1200px) {
   .slider-btn {
-    padding: 25px 25px 25px 62.5px;
+    padding: 20px 25px 20px 62.5px;
   }
 }
 .slider-btn::before {
@@ -703,7 +703,7 @@ body {
   padding: 50px 50px 50px 125px;
   color: #ffffff;
   max-width: 516px;
-  font-size: 0.93em;
+  font-size: 24px;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -714,7 +714,7 @@ body {
 }
 @media (max-width: 1200px) {
   .call-action__btn {
-    padding: 25px 25px 25px 62.5px;
+    padding: 20px 25px 20px 62.5px;
   }
 }
 .call-action__btn::before {
@@ -749,7 +749,7 @@ body {
   padding: 50px 50px 50px 125px;
   color: #f95353;
   max-width: 516px;
-  font-size: 0.93em;
+  font-size: 24px;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -760,7 +760,7 @@ body {
 }
 @media (max-width: 1200px) {
   .project-inquiry__btn {
-    padding: 25px 25px 25px 62.5px;
+    padding: 20px 25px 20px 62.5px;
   }
 }
 .project-inquiry__btn::before {
@@ -797,32 +797,74 @@ body {
   justify-content: space-between;
   padding-top: 152px;
 }
-
-.address__list-title {
-  font-size: 28px;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 700;
-  text-transform: uppercase;
+@media (max-width: 992px) {
+  .footer-top__inner {
+    flex-direction: column;
+    padding-top: 50px;
+  }
 }
+
 .address__link {
   color: #ffffff;
-  font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 64px;
   letter-spacing: 0.56px;
 }
 .address__list {
-  width: 250px;
+  width: 350px;
+}
+@media (max-width: 992px) {
+  .address__list {
+    width: 100%;
+  }
+}
+.address__list-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .address__list-title {
+    font-size: 1.5em;
+  }
 }
 .address__list-address {
   margin-bottom: 80px;
+  width: 250px;
+}
+@media (max-width: 1200px) {
+  .address__list-address {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .address__list-address {
+    margin-bottom: 20px;
+  }
 }
 .address__list-phone {
   margin-bottom: 50px;
 }
+@media (max-width: 1200px) {
+  .address__list-phone {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .address__list-phone {
+    margin-bottom: 15px;
+  }
+}
+
 .social {
   display: inline-block;
+}
+@media (max-width: 992px) {
+  .social {
+    margin-bottom: 20px;
+  }
 }
 .social__link {
   display: inline-block;
@@ -835,6 +877,7 @@ body {
 
 .form {
   text-align: left;
+  max-width: 1240px;
 }
 .form__text, .form__name, .form__email {
   background-color: rgba(255, 255, 255, 0.1);
@@ -844,31 +887,65 @@ body {
   caret-color: #ffffff;
   color: #ffffff;
 }
+@media (max-width: 1200px) {
+  .form__text, .form__name, .form__email {
+    padding: 0 10px 0 20px;
+  }
+}
 .form__text::placeholder, .form__name::placeholder, .form__email::placeholder {
   color: #ffffff;
   font-size: 24px;
+  font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  .form__text::placeholder, .form__name::placeholder, .form__email::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 .form__text {
-  width: 1240px;
+  width: 100%;
   height: 317px;
   padding-top: 55px;
   resize: none;
   margin-bottom: 39px;
 }
+@media (max-width: 1200px) {
+  .form__text {
+    margin-bottom: 20px;
+    height: 255px;
+  }
+}
 .form__name {
-  width: 600px;
   height: 103px;
-  margin-bottom: 38px;
+  margin-right: 40px;
+  width: 48%;
+}
+@media (max-width: 1200px) {
+  .form__name {
+    height: 70px;
+  }
 }
 .form__email {
-  width: 600px;
+  width: 48%;
   height: 103px;
+}
+@media (max-width: 1200px) {
+  .form__email {
+    height: 70px;
+  }
 }
 .form__box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 38px;
+}
+@media (max-width: 1200px) {
+  .form__box {
+    margin-bottom: 20px;
+  }
 }
 .form__btn {
   background: #ffffff;
@@ -877,7 +954,7 @@ body {
   padding: 50px 50px 50px 125px;
   color: #f49244;
   max-width: 516px;
-  font-size: 0.93em;
+  font-size: 24px;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -888,7 +965,7 @@ body {
 }
 @media (max-width: 1200px) {
   .form__btn {
-    padding: 25px 25px 25px 62.5px;
+    padding: 20px 25px 20px 62.5px;
   }
 }
 .form__btn::before {
@@ -919,38 +996,70 @@ body {
 .footer__bottom {
   padding-top: 165px;
 }
+@media (max-width: 1200px) {
+  .footer__bottom {
+    padding-top: 100px;
+  }
+}
 .footer__bottom-inner {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .footer__bottom-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 .footer__bottom-left {
   text-align: left;
 }
+@media (max-width: 992px) {
+  .footer__bottom-left {
+    text-align: center;
+  }
+}
 .footer__bottom-right {
   text-align: right;
-  width: 570px;
+  max-width: 570px;
+}
+@media (max-width: 992px) {
+  .footer__bottom-right {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 .footer__bottom-btn-box {
   display: flex;
 }
 .footer__bottom-phone {
   color: #ffffff;
-  font-size: 52px;
+  font-size: 1.9em;
   font-weight: 400;
-  line-height: 56px;
-  text-align: left;
+  line-height: 1.1em;
   display: block;
   margin-bottom: 51px;
+}
+@media (max-width: 1200px) {
+  .footer__bottom-phone {
+    margin-bottom: 25px;
+  }
 }
 .footer__bottom-mail {
   width: 460px;
   color: #ffffff;
-  font-size: 52px;
+  font-size: 1.9em;
   font-weight: 400;
-  line-height: 56px;
-  text-align: left;
+  line-height: 1.1em;
   display: block;
   margin-bottom: 69px;
+}
+@media (max-width: 1200px) {
+  .footer__bottom-mail {
+    margin-bottom: 35px;
+  }
 }
 .footer__bottom-btn {
   margin-bottom: 125px;
@@ -960,23 +1069,33 @@ body {
   line-height: 100px;
   padding: 0 34px;
 }
+@media (max-width: 1200px) {
+  .footer__bottom-btn {
+    margin-bottom: 60px;
+  }
+}
 
 .footer__date {
-  font-size: 36px;
-  line-height: 56px;
+  font-size: 1.28em;
+  line-height: 2em;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 33px;
+}
+@media (max-width: 1200px) {
+  .footer__date {
+    margin-bottom: 16px;
+  }
 }
 
 .footer__date-text {
   color: #ffffff;
-  font-size: 40px;
-  line-height: 46px;
+  font-size: 1.4em;
+  line-height: 1em;
 }
 
 .footer__copyright {
   margin-bottom: 44px;
-  font-size: 36px;
+  font-size: 1.3em;
   color: #8a8a8a;
 }
 
