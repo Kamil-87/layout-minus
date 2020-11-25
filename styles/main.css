@@ -385,7 +385,6 @@ p {
   max-width: 2456px;
   margin: 0 auto;
   padding: 0 288px;
-  border: 1px solid green;
 }
 @media screen and (max-width: 1900px) {
   .container {
@@ -425,7 +424,7 @@ body {
   background-color: #30323a;
   font-family: "Proxima Nova", serif;
 }
-@media (max-width: 1900px) {
+@media (max-width: 1700px) {
   body {
     font-size: 24px;
   }
@@ -455,6 +454,7 @@ body {
 }
 .header__logo {
   max-width: 230px;
+  margin-right: 20px;
 }
 .header__logo img {
   object-fit: cover;
@@ -535,20 +535,32 @@ body {
   cursor: pointer;
 }
 
-.slider__image {
-  width: 2456px;
-  height: 1068px;
-  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
-  background-color: #8a8a8a;
-  margin: 0 auto;
+.slider {
   position: relative;
+}
+
+.slider-image {
+  margin: 0 auto;
+  padding: 0 54px;
+  max-width: 2510px;
+  max-height: 1068px;
+}
+.slider-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .slider__content {
   position: absolute;
-  top: 418px;
-  left: 144px;
   text-align: right;
+  top: 40%;
+  left: 10%;
+}
+@media (max-width: 1600px) {
+  .slider__content {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .slider__content-box {
@@ -576,7 +588,29 @@ body {
   position: absolute;
   left: -15px;
   top: -15px;
-  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .slider__scroll-box::before {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 1600px) {
+  .slider__scroll-box {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .slider__scroll-box {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .slider__scroll-box {
+    display: none;
+  }
 }
 
 .slider__pager-box {
@@ -607,16 +641,21 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   color: #30323a;
-  font-family: "Proxima Nova Rg", serif;
-  line-height: 1.3em;
-  font-size: 0.8em;
-  padding: 5% 4% 3%;
-  /*  @media (max-width: 1900px) {
-      font-size: 26px;
-    }
-    @media (max-width: 1400px) {
-      font-size: 20px;
-    }*/
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  padding: 80px 73px 55px 60px;
+  line-height: 36px;
+  text-align: justify;
+}
+@media (max-width: 1700px) {
+  .slider__text {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1600px) {
+  .slider__text {
+    display: none;
+  }
 }
 
 .slider-btn {
@@ -637,7 +676,7 @@ body {
 }
 @media (max-width: 1200px) {
   .slider-btn {
-    padding: 20px 25px 20px 62.5px;
+    padding: 20px 25px 20px 75px;
   }
 }
 .slider-btn::before {
@@ -664,9 +703,19 @@ body {
   background: #69872a;
   box-shadow: none;
 }
+@media (max-width: 992px) {
+  .slider-btn {
+    display: none;
+  }
+}
 
 .section__wrap {
   padding: 155px 0;
+}
+@media (max-width: 1400px) {
+  .section__wrap {
+    padding: 100px 0;
+  }
 }
 
 .call-action__inner, .project-inquiry__inner {
@@ -714,7 +763,7 @@ body {
 }
 @media (max-width: 1200px) {
   .call-action__btn {
-    padding: 20px 25px 20px 62.5px;
+    padding: 20px 25px 20px 75px;
   }
 }
 .call-action__btn::before {
@@ -760,7 +809,7 @@ body {
 }
 @media (max-width: 1200px) {
   .project-inquiry__btn {
-    padding: 20px 25px 20px 62.5px;
+    padding: 20px 25px 20px 75px;
   }
 }
 .project-inquiry__btn::before {
@@ -965,7 +1014,7 @@ body {
 }
 @media (max-width: 1200px) {
   .form__btn {
-    padding: 20px 25px 20px 62.5px;
+    padding: 20px 25px 20px 75px;
   }
 }
 .form__btn::before {

@@ -38,7 +38,6 @@ p {
   max-width: 2456px;
   margin: 0 auto;
   padding: 0 288px;
-  border: 1px solid green;
 
   @media screen and (max-width: 1900px) {
     max-width: 1860px;
@@ -70,7 +69,7 @@ body {
   background-color: #30323a;
   font-family: "Proxima Nova", serif;
 
-  @media (max-width: 1900px) {
+  @media (max-width: 1700px) {
     font-size: 24px;
   }
   @media (max-width: 1400px) {
@@ -98,6 +97,7 @@ body {
 
   &__logo {
     max-width: 230px;
+    margin-right: 20px;
 
     img {
       object-fit: cover;
@@ -185,24 +185,32 @@ body {
   cursor: pointer;
 }
 
-.banner__section {
-
+.slider {
+  position: relative;
 }
 
-.slider__image {
-  width: 2456px;
-  height: 1068px;
-  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
-  background-color: #8a8a8a;
+.slider-image {
   margin: 0 auto;
-  position: relative;
+  padding: 0 54px;
+  max-width: 2510px;
+  max-height: 1068px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .slider__content {
   position: absolute;
-  top: 418px;
-  left: 144px;
   text-align: right;
+  top: 40%;
+  left: 10%;
+
+  @media (max-width: 1600px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .slider__content-box {
@@ -230,7 +238,23 @@ body {
     position: absolute;
     left: -15px;
     top: -15px;
-    z-index: -1;
+
+    @media (max-width: 1200px) {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  @media (max-width: 1600px) {
+    margin-right: 50px;
+  }
+  @media (max-width: 1200px) {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  @media (max-width: 992px) {
+    display: none;
   }
 }
 
@@ -263,27 +287,36 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   color: #30323a;
-  font-family: 'Proxima Nova Rg', serif;
-  line-height: 1.3em;
-  font-size: 0.8em;
-  padding: 5% 4% 3%;
-/*  @media (max-width: 1900px) {
-    font-size: 26px;
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  padding: 80px 73px 55px 60px;
+  line-height: 36px;
+  text-align: justify;
+
+  @media (max-width: 1700px) {
+    font-size: 28px;
   }
-  @media (max-width: 1400px) {
-    font-size: 20px;
-  }*/
+  @media (max-width: 1600px) {
+    display: none;
+  }
 
 }
 
 .slider-btn {
   @include button-bg-icon(#97c13c, #ffffff, "../images/note.svg");
+
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
 // ------------------------------------------
 
 .section__wrap {
   padding: 155px 0;
+  @media (max-width: 1400px) {
+    padding: 100px 0;
+  }
 }
 
 .call-action, .project-inquiry {
@@ -485,7 +518,6 @@ body {
   }
 }
 
-
 .footer__bottom {
   padding-top: 165px;
   @media (max-width: 1200px) {
@@ -561,7 +593,6 @@ body {
   }
 
 }
-
 
 .footer__date {
   font-size: 1.28em;
