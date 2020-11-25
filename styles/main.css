@@ -419,19 +419,20 @@ p {
 }
 
 body {
-  font-size: 32px;
+  font-size: 28px;
+  line-height: 32px;
   font-weight: 400;
   background-color: #30323a;
   font-family: "Proxima Nova", serif;
 }
 @media (max-width: 1900px) {
   body {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (max-width: 1400px) {
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -525,34 +526,6 @@ body {
   }
 }
 
-.btn {
-  padding-right: 50px;
-  height: 120px;
-  background-color: #97c13c;
-  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
-  position: relative;
-  padding-left: 125px;
-  border: none;
-  font-weight: 500;
-  outline: none;
-  text-align: left;
-  text-transform: uppercase;
-  font-family: "Proxima Nova", serif;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.btn :hover {
-  background-color: rgba(151, 193, 60, 0.9);
-}
-.btn::before {
-  content: "";
-  position: absolute;
-  width: 64px;
-  height: 60px;
-  top: 28px;
-  left: 34px;
-}
-
 /*------------------------------*/
 .btn-next, .btn-prev {
   background-color: transparent;
@@ -622,14 +595,38 @@ body {
   align-items: center;
 }
 
+.slider__pager {
+  font-size: 20px;
+  line-height: 36px;
+  color: #8a8a8a;
+}
+
+.slider__text {
+  max-height: 198px;
+  max-width: 1040px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #30323a;
+  font-family: "Proxima Nova Rg", serif;
+  line-height: 1.3em;
+  font-size: 0.8em;
+  padding: 5% 4% 3%;
+  /*  @media (max-width: 1900px) {
+      font-size: 26px;
+    }
+    @media (max-width: 1400px) {
+      font-size: 20px;
+    }*/
+}
+
 .slider-btn {
   background: #97c13c;
-  height: 120px;
   box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
   position: relative;
-  padding-left: 125px;
-  padding-right: 50px;
+  padding: 50px 50px 50px 125px;
   color: #ffffff;
+  max-width: 516px;
+  font-size: 0.93em;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -638,14 +635,26 @@ body {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+@media (max-width: 1200px) {
+  .slider-btn {
+    padding: 25px 25px 25px 62.5px;
+  }
+}
 .slider-btn::before {
   content: "";
-  background-image: url("../images/note.svg");
+  background: url("../images/note.svg") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 64px;
   height: 60px;
-  top: 28px;
-  left: 34px;
+  top: 25%;
+  left: 8%;
+}
+@media (max-width: 1200px) {
+  .slider-btn::before {
+    width: 32px;
+    height: 30px;
+  }
 }
 .slider-btn:hover {
   background: #7fa232;
@@ -654,24 +663,6 @@ body {
 .slider-btn:active {
   background: #69872a;
   box-shadow: none;
-}
-
-.slider__pager {
-  font-size: 20px;
-  line-height: 36px;
-  color: #8a8a8a;
-}
-
-.slider__text {
-  height: 198px;
-  width: 1040px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  color: #30323a;
-  font-family: "Proxima Nova Rg", serif;
-  line-height: 36px;
-  font-size: 28px;
-  padding: 80px 60px 53px;
 }
 
 .section__wrap {
@@ -684,18 +675,21 @@ body {
   font-family: "Proxima Nova", serif;
 }
 .call-action__title, .project-inquiry__title {
-  font-size: 56px;
+  font-size: 2em;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 1.5em;
   text-transform: uppercase;
   letter-spacing: 1.12px;
-  margin-bottom: 68px;
+  margin-bottom: 1.1em;
+  /*    @media (max-width: 1900px) {
+        font-size: 26px;
+      }*/
 }
 .call-action__description, .project-inquiry__description {
-  font-size: 32px;
+  font-size: 1.14em;
   font-weight: 400;
-  line-height: 56px;
-  margin-bottom: 62px;
+  line-height: 1.7em;
+  margin-bottom: 2em;
 }
 
 .project-inquiry {
@@ -704,12 +698,12 @@ body {
 
 .call-action__btn {
   background: #97c13c;
-  height: 120px;
   box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
   position: relative;
-  padding-left: 125px;
-  padding-right: 50px;
+  padding: 50px 50px 50px 125px;
   color: #ffffff;
+  max-width: 516px;
+  font-size: 0.93em;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -718,14 +712,26 @@ body {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+@media (max-width: 1200px) {
+  .call-action__btn {
+    padding: 25px 25px 25px 62.5px;
+  }
+}
 .call-action__btn::before {
   content: "";
-  background-image: url("../images/note.svg");
+  background: url("../images/note.svg") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 64px;
   height: 60px;
-  top: 28px;
-  left: 34px;
+  top: 25%;
+  left: 8%;
+}
+@media (max-width: 1200px) {
+  .call-action__btn::before {
+    width: 32px;
+    height: 30px;
+  }
 }
 .call-action__btn:hover {
   background: #7fa232;
@@ -738,12 +744,12 @@ body {
 
 .project-inquiry__btn {
   background: #ffffff;
-  height: 120px;
   box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
   position: relative;
-  padding-left: 125px;
-  padding-right: 50px;
+  padding: 50px 50px 50px 125px;
   color: #f95353;
+  max-width: 516px;
+  font-size: 0.93em;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -752,14 +758,26 @@ body {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+@media (max-width: 1200px) {
+  .project-inquiry__btn {
+    padding: 25px 25px 25px 62.5px;
+  }
+}
 .project-inquiry__btn::before {
   content: "";
-  background-image: url("../images/banknote.svg");
+  background: url("../images/banknote.svg") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 64px;
   height: 60px;
-  top: 28px;
-  left: 34px;
+  top: 25%;
+  left: 8%;
+}
+@media (max-width: 1200px) {
+  .project-inquiry__btn::before {
+    width: 32px;
+    height: 30px;
+  }
 }
 .project-inquiry__btn:hover {
   background: #ebebeb;
@@ -854,12 +872,12 @@ body {
 }
 .form__btn {
   background: #ffffff;
-  height: 120px;
   box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.13);
   position: relative;
-  padding-left: 125px;
-  padding-right: 50px;
+  padding: 50px 50px 50px 125px;
   color: #f49244;
+  max-width: 516px;
+  font-size: 0.93em;
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -868,14 +886,26 @@ body {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+@media (max-width: 1200px) {
+  .form__btn {
+    padding: 25px 25px 25px 62.5px;
+  }
+}
 .form__btn::before {
   content: "";
-  background-image: url("../images/paperplane.svg");
+  background: url("../images/paperplane.svg") no-repeat;
+  background-size: contain;
   position: absolute;
   width: 64px;
   height: 60px;
-  top: 28px;
-  left: 34px;
+  top: 25%;
+  left: 8%;
+}
+@media (max-width: 1200px) {
+  .form__btn::before {
+    width: 32px;
+    height: 30px;
+  }
 }
 .form__btn:hover {
   background: #ebebeb;
