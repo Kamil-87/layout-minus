@@ -38,7 +38,7 @@ p {
   max-width: 2456px;
   margin: 0 auto;
   padding: 0 288px;
-  
+
   @media screen and (max-width: 1900px) {
     max-width: 1860px;
     padding: 0 120px;
@@ -59,7 +59,7 @@ p {
     max-width: 450px;
     padding: 0 15px;
   }
-  
+
   @media screen and (max-width: 380px) {
     max-width: 310px;
     padding: 0 5px;
@@ -73,7 +73,7 @@ body {
   font-weight: 400;
   background-color: #30323a;
   font-family: "Proxima Nova", serif;
-  
+
   @media (max-width: 1700px) {
     font-size: 24px;
   }
@@ -83,47 +83,47 @@ body {
 }
 
 .header {
-  
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-height: 212px;
     padding: 97px 0;
-    
+
     @media (max-width: 1900px) {
       padding: 50px 0;
     }
-    
+
     @media (max-width: 1200px) {
       padding: 25px 0;
     }
   }
-  
+
   &__logo {
     max-width: 230px;
     margin-right: 20px;
-    
+
     img {
       object-fit: cover;
       width: 100%;
       height: 100%;
     }
-    
+
     @media (max-width: 1900px) {
       max-width: 150px;
     }
   }
-  
+
   &__menu {
     display: flex;
     align-items: center;
     color: #ffffff;
-    
+
     @media (max-width: 700px) {
       display: none;
     }
-    
+
     &-burger {
       display: none;
       @media (max-width: 700px) {
@@ -131,22 +131,22 @@ body {
       }
     }
   }
-  
+
   &__link {
     color: #ffffff;
     font-family: Gotham, serif;
     text-align: left;
     padding: 18px 0;
   }
-  
+
   &__list {
     padding: 18px 0;
   }
-  
+
   &__link:hover {
     border-bottom: 4px solid #97c13c;
   }
-  
+
 }
 
 .header__list + .header__list {
@@ -155,7 +155,7 @@ body {
 
 .header__search {
   border-bottom: 1px solid #45474e;
-  
+
   &-input {
     //background: transparent;
     border: none;
@@ -166,18 +166,18 @@ body {
     background-size: 32px;
     max-width: 298px;
     padding: 0 40px 15px 10px;
-    
+
     @media (max-width: 1900px) {
       background-size: 26px;
       padding: 0 30px 10px 5px;
     }
-    
+
   }
-  
+
   @media (max-width: 991.98px) {
     display: none;
   }
-  
+
 }
 
 
@@ -203,7 +203,7 @@ body {
   position: absolute;
   top: 40%;
   left: 15%;
-  
+
   @media (max-width: 576px) {
     margin: 0 10px;
   }
@@ -220,11 +220,11 @@ body {
   padding: 0 54px;
   max-width: 2510px;
   max-height: 1068px;
-  
+
   .slider-banner {
     width: 100%;
     height: 100%;
-  
+
 
   }
   @media (max-width: 992px) {
@@ -240,7 +240,7 @@ body {
 .slider__content-box {
   display: flex;
   align-items: center;
-  
+
   @media (max-width: 1600px) {
     justify-content: center;
     margin-top: 50px;
@@ -264,7 +264,7 @@ body {
     //bottom: 0;
     display: none;
   }
-  
+
   &::before {
     content: "";
     display: block;
@@ -276,14 +276,14 @@ body {
     position: absolute;
     left: -15px;
     top: -15px;
-  
+
 
     @media (max-width: 1200px) {
       width: 130px;
       height: 130px;
     }
   }
-  
+
   @media (max-width: 1600px) {
     margin-right: 50px;
   }
@@ -303,7 +303,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  
+
   img {
     display: block;
   }
@@ -331,7 +331,7 @@ body {
   padding: 80px 73px 55px 60px;
   line-height: 36px;
   text-align: justify;
-  
+
   @media (max-width: 1700px) {
     font-size: 28px;
   }
@@ -339,12 +339,12 @@ body {
     padding: 10px;
     text-align: center;
   }
-  
+
 }
 
 .slider-btn {
   @include button-bg-icon(#97c13c, #ffffff, "../images/note.svg");
-  
+
 
 }
 
@@ -361,13 +361,13 @@ body {
 }
 
 .call-action, .project-inquiry {
-  
+
   &__inner {
     text-align: center;
     color: #ffffff;
     font-family: "Proxima Nova", serif;
   }
-  
+
   &__title {
     font-size: 2em;
     font-weight: 700;
@@ -375,12 +375,12 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.12px;
     margin-bottom: 1.1em;
-    
+
     /*    @media (max-width: 1900px) {
           font-size: 26px;
         }*/
   }
-  
+
   &__description {
     font-size: 1.14em;
     font-weight: 400;
@@ -409,23 +409,23 @@ body {
   min-height: 924px;
   background: #e8e8e8 url(../images/map.jpg) repeat-x center;
   background-size: cover;
-  
+
   &__inner {
     display: flex;
     justify-content: space-between;
     padding-top: 152px;
-    
+
     @media (max-width: 992px) {
       flex-direction: column;
       padding-top: 50px;
       padding-bottom: 50px;
     }
   }
-  
+
 }
 
 .address {
-  
+
   &__link {
     color: #ffffff;
     font-weight: 700;
@@ -433,13 +433,13 @@ body {
     line-height: 64px;
     letter-spacing: 0.56px;
   }
-  
+
   &__list {
     width: 350px;
     @media (max-width: 992px) {
       width: 100%;
     }
-    
+
     &-title {
       color: rgba(255, 255, 255, .5);
       font-weight: 700;
@@ -448,7 +448,7 @@ body {
         font-size: 1.5em;
       }
     }
-    
+
     &-address {
       margin-bottom: 80px;
       width: 250px;
@@ -460,7 +460,7 @@ body {
         margin-bottom: 20px;
       }
     }
-    
+
     &-phone {
       margin-bottom: 50px;
       @media (max-width: 1200px) {
@@ -471,7 +471,7 @@ body {
       }
     }
   }
-  
+
 }
 
 .social {
@@ -479,7 +479,7 @@ body {
   @media (max-width: 992px) {
     margin-bottom: 20px;
   }
-  
+
   &__link {
     display: inline-block;
     color: #ffffff;
@@ -493,7 +493,7 @@ body {
 .form {
   text-align: left;
   max-width: 1240px;
-  
+
   &__text, &__name, &__email {
     background-color: rgba(255, 255, 255, .1);
     padding: 0 20px 0 40px;
@@ -504,7 +504,7 @@ body {
     @media (max-width: 1200px) {
       padding: 0 10px 0 20px;
     }
-    
+
     &::placeholder {
       color: #ffffff;
       font-size: 24px;
@@ -517,7 +517,7 @@ body {
       }
     }
   }
-  
+
   &__text {
     width: 100%;
     height: 317px;
@@ -532,7 +532,7 @@ body {
       padding-top: 20px;
     }
   }
-  
+
   &__name {
     height: 103px;
     margin-right: 40px;
@@ -545,7 +545,7 @@ body {
       margin-bottom: 20px;
     }
   }
-  
+
   &__email {
     width: 48%;
     height: 103px;
@@ -556,7 +556,7 @@ body {
       width: 100%;
     }
   }
-  
+
   &__box {
     display: flex;
     justify-content: space-between;
@@ -568,7 +568,7 @@ body {
       flex-direction: column;
     }
   }
-  
+
   &__btn {
     @include button-bg-icon(#ffffff, #f49244, "../images/paperplane.svg");
     padding-bottom: 50px;
@@ -580,7 +580,7 @@ body {
   @media (max-width: 1200px) {
     padding-top: 100px;
   }
-  
+
   &-inner {
     display: flex;
     justify-content: space-between;
@@ -591,14 +591,14 @@ body {
       text-align: center;
     }
   }
-  
+
   &-left {
     text-align: left;
     @media (max-width: 992px) {
       text-align: center;
     }
   }
-  
+
   &-right {
     text-align: right;
     max-width: 570px;
@@ -607,8 +607,8 @@ body {
       margin-bottom: 30px;
     }
   }
-  
-  
+
+
   &-phone {
     color: #ffffff;
     font-size: 1.9em;
@@ -623,7 +623,7 @@ body {
       font-size: 42px;
     }
   }
-  
+
   &-mail {
     width: 460px;
     color: #ffffff;
@@ -639,7 +639,7 @@ body {
       font-size: 28px;
     }
   }
-  
+
 }
 
 .footer__date {
@@ -662,7 +662,7 @@ body {
   margin-bottom: 44px;
   font-size: 1.3em;
   color: #8a8a8a;
-  
+
   @media (max-width: 992px) {
     font-size: 24px;
     text-align: center;
@@ -674,7 +674,7 @@ body {
 
 
 .footer__bottom-btn-box {
-  
+
   @media (max-width: 576px) {
    min-width: 300px;
     padding: 0 10px;
@@ -687,7 +687,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   background-color: #ffffff;
-  
+
   &-social {
     background-color: #ffffff;
     display: block;
@@ -703,7 +703,7 @@ body {
   display: flex;
   max-width: 474px;
   margin-bottom: 125px;
-  
+
   @media (max-width: 1400px) {
     margin-bottom: 75px;
   }
@@ -721,13 +721,12 @@ body {
   height: 100px;
   line-height: 100px;
   padding: 0 37px;
-  border-radius: 5px;
   @media (max-width: 576px) {
     display: inline-block;
     font-size: 26px;
     padding: 10px 0;
   }
-  
+
   &:hover {
     background: darken(#ffffff, 8%);
     transition: all 0.3s ease;
@@ -745,14 +744,14 @@ body {
   height: 100px;
   line-height: 100px;
   padding: 0 37px;
-  
+
   @media (max-width: 576px) {
     display: inline-block;
     width: 100%;
     font-size: 26px;
     padding: 10px 0;
   }
-  
+
   &:hover {
     background: darken(#ffffff, 8%);
     transition: all 0.3s ease;

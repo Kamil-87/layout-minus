@@ -1293,7 +1293,6 @@ body {
   height: 100px;
   line-height: 100px;
   padding: 0 37px;
-  border-radius: 5px;
 }
 @media (max-width: 576px) {
   .footer__bottom-btn {
