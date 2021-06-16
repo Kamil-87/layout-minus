@@ -13,48 +13,37 @@
   <div class="container">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="#">
+        <a href="">
           <img src="images/logo.png" alt="minus">
         </a>
       </div>
 
-      <nav class="header__nav">
-        <div class="header__menu-burger">
-          <img src="images/burger.png" alt="">
+      <div class="header__menu menu">
+        <div class="menu__icon">
+          <span></span>
         </div>
-        <ul class="header__menu">
-          <li class="header__list">
-            <a href="#about" class="header__link">
-              ABOUT
-            </a>
-          </li>
-          <li class="header__list">
-            <a href="#!" class="header__link">
-              COMPANY
-            </a>
-          </li>
-          <li class="header__list">
-            <a href="#work" class="header__link">
-              WORK
-            </a>
-          </li>
-          <li class="header__list">
-            <a href="#contact" class="header__link">
-              CONTACT
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header__search">
-        <input type="text" class="header__search-input" id="search"/>
-        <label for="search"></label>
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li><a data-goto=".page__section_about" href="#" class="menu__link">ABOUT</a></li>
+            <li class="header__list"><a href="" class="menu__link">COMPANY</a></li>
+            <li class="header__list"><a data-goto=".page__section_work" href="#" class="menu__link">WORK</a></li>
+            <li class="header__list"><a data-goto=".page__section_contact" href="#" class="menu__link">CONTACT</a></li>
+          </ul>
+        </nav>
       </div>
+      <!--        <div class="header__search">-->
+      <!--          <input type="text" class="header__search-input" id="search"/>-->
+      <!--          <label for="search"></label>-->
+      <!--        </div>-->
+
+
     </div>
   </div>
 </header>
 
-<div class="slider">
+<main class="main">
+
+  <div class="slider">
     <div class="slider-image">
       <img src="images/slider_base.jpg" alt="slider" class="slider-banner">
 
@@ -86,46 +75,47 @@
         <button class="slider-btn">
           READ More about Miinus
         </button>
-  </div>
-  </div>
-</div>
-
-
-<section class="call-action section__wrap" id="about">
-  <div class="container">
-    <div class="call-action__inner">
-      <h1 class="call-action__title">a short distance from that second capital</h1>
-
-      <p class="call-action__description">
-        At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific,
-        where all the mail-steamers, and those carrying travellers between North America, China, Japan, and the Oriental
-        islands put in. It is situated in the bay of Yeddo, and at but a
-      </p>
-
-      <button class="call-action__btn"> READ More about Miinus</button>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="project-inquiry section__wrap" id="work">
-  <div class="container">
-    <div class="project-inquiry__inner">
-      <h1 class="project-inquiry__title">LIKE WHAT YOU SEE?</h1>
 
-      <p class="project-inquiry__description">
-        At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific,
-        where all the mail-steamers, and those carrying travellers between North America, China, Japan, and the Oriental
-        islands put in. It is situated in the bay of Yeddo, and at but a
-      </p>
+  <section class="call-action section__wrap page__section_about">
+    <div class="container">
+      <div class="call-action__inner">
+        <h1 class="call-action__title">a short distance from that second capital</h1>
 
-      <button class="btn project-inquiry__btn">go to PROJECT INQUIRY</button>
+        <p class="call-action__description">
+          At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific,
+          where all the mail-steamers, and those carrying travellers between North America, China, Japan, and the Oriental
+          islands put in. It is situated in the bay of Yeddo, and at but a
+        </p>
+
+        <button class="call-action__btn"> READ More about Miinus</button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="project-inquiry section__wrap page__section_work" >
+    <div class="container">
+      <div class="project-inquiry__inner">
+        <h1 class="project-inquiry__title">LIKE WHAT YOU SEE?</h1>
+
+        <p class="project-inquiry__description">
+          At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific,
+          where all the mail-steamers, and those carrying travellers between North America, China, Japan, and the Oriental
+          islands put in. It is situated in the bay of Yeddo, and at but a
+        </p>
+
+        <button class="btn project-inquiry__btn">go to PROJECT INQUIRY</button>
+      </div>
+    </div>
+  </section>
+</main>
 
 
 <footer class="footer">
-  <section class="footer-top" id="contact">
+  <section class="footer-top page__section_contact">
     <div class="container">
       <div class="footer-top__inner">
         <ul class="footer-top__address address">
@@ -171,10 +161,12 @@
         </ul>
 
         <form class="footer-top__form form" action="#" method="post">
-          <textarea class="form__text" placeholder="your message"></textarea>
+          <label>
+            <textarea class="form__text" placeholder="your message"></textarea>
+          </label>
           <div class="form__box">
-            <input type="text" class="form__name" placeholder="Your name" name="name"/>
-            <input type="email" class="form__email" placeholder="e-mail address" name="email"/>
+              <input type="text" class="form__name" placeholder="Your name" name="name"/>
+              <input type="email" class="form__email" placeholder="e-mail address" name="email"/>
           </div>
           <button class="form__btn" type="submit">
             send message
@@ -223,5 +215,8 @@
   </div>
 
 </footer>
+
+<!-- scripts -->
+<script src="js/script.js"></script>
 </body>
 </html>
